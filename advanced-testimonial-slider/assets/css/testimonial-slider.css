@@ -1,0 +1,484 @@
+/**
+ * Advanced Testimonial Slider - Front-end Styles
+ */
+
+/* Outer wrapper for the testimonials section */
+.testimonials-outer-wrapper {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    touch-action: auto;
+}
+
+/* Carousel wrapper */
+.carousel-wrapper {
+    position: relative;
+    padding: 20px 0;
+    touch-action: auto;
+}
+
+/* Carousel track that holds all slides */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y pan-x;
+    will-change: transform;
+}
+
+/* Individual carousel slides */
+.carousel-slide {
+    transition: all 0.5s ease-in-out;
+    opacity: 0.15;
+    padding: 0 10px;
+    flex: 0 0 100%;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+/* Active slide */
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* Testimonial section styling */
+.testimonial-section {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1000px;
+    min-height: 520px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Image column in the testimonial */
+.testimonial-image-column {
+    flex: 1;
+    background-size: cover;
+    background-position: center center;
+    min-height: 520px;
+    background-color: #f5f5f5; /* Fallback color if no image */
+}
+
+/* Content column in the testimonial */
+.testimonial-content-column {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Testimonial name styling */
+.testimonial-name {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    color: #3498db;
+    line-height: 1.1;
+}
+
+/* Testimonial description styling */
+.testimonial-description {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* Video questions container */
+.video-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Individual video link */
+.video-link {
+    padding: 0.75rem 1rem;
+    background: rgba(44, 62, 80, 0.05);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for video link */
+.video-link:hover {
+    background: rgba(44, 62, 80, 0.1);
+}
+
+/* Question text in video link */
+.video-link-question {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin: 0;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* "Watch Video" text */
+.watch-video-text {
+    color: #3498db;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+/* Video Popup Styles */
+.video-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.video-popup-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    background: #000;
+}
+
+.video-popup-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.close-video {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.close-video:hover {
+    background: #e6e6e6;
+    transform: scale(1.1);
+}
+
+/* Call-to-action button styling */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 0.35rem;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.01rem;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: linear-gradient(to right, #3498db, #2c3e50) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    line-break: normal;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+    text-transform: uppercase;
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Hover effect for call-to-action button */
+.cta-button:hover {
+    opacity: 0.7;
+    transform: translate(0, -3px) !important;
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}
+
+/* Carousel Navigation Styles */
+.carousel-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.carousel-arrow {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-arrow svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+/* Carousel Pagination Dots */
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.pagination-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-dot.active {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* Animation keyframes */
+@keyframes initialSwipeHint {
+    0% { transform: translateX(0); }
+    2% { transform: translateX(-20px); }
+    4% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes pulseGradient {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes initialPulse {
+    0% { 
+        opacity: 0;
+        width: 40px;
+    }
+    30% { 
+        opacity: 1;
+        width: 60px;
+    }
+    70% { 
+        opacity: 1;
+        width: 60px;
+    }
+    100% { 
+        opacity: 0;
+        width: 40px;
+    }
+}
+
+/* Mobile Styles and Responsive Adjustments */
+@media (max-width: 1024px) {
+    .testimonial-section {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 968px) {
+    /* Reset all horizontal spacing */
+    .testimonials-outer-wrapper {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .carousel-container {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .carousel-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Remove side padding from slides */
+    .carousel-slide {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Make testimonial section full width */
+    .testimonial-section {
+        max-width: none;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Hide navigation arrows on mobile */
+    .carousel-nav {
+        display: none;
+    }
+
+    .carousel-track {
+        touch-action: pan-y pan-x;
+        will-change: transform;
+    }
+
+    .testimonial-section {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    /* Edge highlight indicator */
+    .testimonial-section::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 60px;
+        background: linear-gradient(
+            to right,
+            rgba(255,255,255,0) 0%,
+            rgba(52, 152, 219, 0.1) 50%,
+            rgba(44, 62, 80, 0.15) 100%
+        );
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    /* Show and animate edge highlight on active slide */
+    .carousel-slide.active .testimonial-section::after {
+        opacity: 1;
+        animation: initialPulse 3s ease-out;
+    }
+    
+    .testimonial-image-column {
+        height: 300px;
+        min-height: 300px;
+    }
+    
+    .testimonial-content-column {
+        padding: 1.5rem;
+    }
+
+    /* Adjust close button position for better mobile access */
+    .close-video {
+        top: -45px;
+        right: 0;
+    }
+
+    /* Adjust video popup padding for mobile */
+    .video-popup-overlay {
+        padding: 10px;
+    }
+
+    /* Ensure text is readable on mobile */
+    .testimonial-name {
+        font-size: 2rem;
+    }
+
+    .video-link {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .cta-button {
+        padding: 0.875rem 1.75rem;
+        font-size: 1.125rem;
+    }
+
+    /* Adjust pagination spacing */
+    .carousel-pagination {
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-name {
+        font-size: 1.75rem;
+    }
+
+    .testimonial-description {
+        font-size: 0.95rem;
+    }
+
+    .video-link-question {
+        font-size: 0.9rem;
+    }
+}
+
+/* Enhancements for image positioning */
+.testimonial-image-column[style*="background-position: left"] {
+    background-position: left center !important;
+}
+
+.testimonial-image-column[style*="background-position: center"] {
+    background-position: center center !important;
+}
+
+.testimonial-image-column[style*="background-position: right"] {
+    background-position: right center !important;
+}

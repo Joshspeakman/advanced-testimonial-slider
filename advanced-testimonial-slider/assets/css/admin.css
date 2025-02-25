@@ -1,0 +1,132 @@
+/**
+ * Advanced Testimonial Slider - Admin Styles
+ */
+
+/* Settings page layout */
+.ats-settings-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+
+.ats-settings-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.ats-settings-sidebar {
+    flex: 1;
+    max-width: 300px;
+}
+
+.ats-settings-box {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.ats-settings-box h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Shortcode display */
+.ats-shortcode-display {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.ats-shortcode-display code {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Question editor styles */
+.slide-questions-wrapper {
+    margin-top: 10px;
+}
+
+.slide-questions {
+    margin-bottom: 15px;
+}
+
+.slide-question {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+}
+
+.question-header {
+    padding: 10px;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-number {
+    font-weight: bold;
+}
+
+.question-body {
+    padding: 15px;
+}
+
+.question-row {
+    margin-bottom: 15px;
+}
+
+.question-row:last-child {
+    margin-bottom: 0;
+}
+
+.question-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Image preview */
+.slide-image-preview {
+    margin-bottom: 10px;
+    min-height: 100px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-image-preview img {
+    max-height: 150px;
+    width: auto;
+}
+
+/* Color picker enhancements */
+.wp-picker-container {
+    display: inline-block;
+}
+
+/* Mobile responsiveness for settings */
+@media (max-width: 782px) {
+    .ats-settings-wrapper {
+        flex-direction: column;
+    }
+    
+    .ats-settings-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .ats-settings-sidebar {
+        max-width: none;
+    }
+}
