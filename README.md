@@ -1,5 +1,7 @@
 # WordPress Testimonial Slider Plugin
 
+[![Buy me a Continue on Ko-fi](https://img.shields.io/badge/Buy_me_a_Continue_%7C_%245-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/speakerjosh)
+
 A responsive WordPress testimonial carousel with video popup functionality, mobile swipe capabilities, and customizable options. Perfect for showcasing testimonials with background images and video content.
 
 ## Version
@@ -182,8 +184,8 @@ A: When editing a slide, use the "Image Position" dropdown in the Slide Image se
 
 This plugin is licensed under the GPL v2 or later.
 
-## Support
+## Insert Coin
 
-If you get some use out of this, you can buy me a coffee on Ko-fi.
+If this saved you some time (or saved you from buying something twice), you can buy me a Continue on Ko-fi. It's $5 and it keeps me building stuff like this.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/speakerjosh)
+[![Buy me a Continue on Ko-fi](https://img.shields.io/badge/Buy_me_a_Continue_%7C_%245-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/speakerjosh)
