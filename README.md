@@ -181,3 +181,9 @@ A: When editing a slide, use the "Image Position" dropdown in the Slide Image se
 ## License
 
 This plugin is licensed under the GPL v2 or later.
+
+## Support
+
+If you get some use out of this, you can buy me a coffee on Ko-fi.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/speakerjosh)
